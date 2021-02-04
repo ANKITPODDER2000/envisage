@@ -1,11 +1,18 @@
 header {
   height: 100vh;
-  overflow-x: hidden;
+  background: #000;
+  overflow: hidden;
+  background: url("../images/bg_emoji/background.png") , #0008;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
 }
 .bg img {
   width: 110vw;
   height: 110vh;
   filter: brightness(0.4);
+  opacity: 0;
 }
 .rock1 {
   position: absolute !important;
