@@ -25,4 +25,23 @@ const findtimeGap = () => {
         String(sec).length == 2 ? String(sec) : "0" + String(sec);
 }
 
-setInterval(findtimeGap , 1000)
+setInterval(findtimeGap , 1000);
+
+
+
+// ztext.js
+var header_text = new Ztextify(".img-per", {
+   depth: "20px",
+   layers: 20,
+   fade: true,
+   direction: "forwards",
+   eventDirection :"reverse",
+   event: "pointer",
+   eventRotation: "25deg"
+});
+
+//Tilt js
+VanillaTilt.init(document.querySelectorAll(".tilt_box"), {
+    max: 20,
+    speed: 400
+});

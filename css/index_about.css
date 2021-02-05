@@ -63,6 +63,9 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+.about .container .img-per{
+    width : 450px;
+}
 .about .container #person{
     position: relative;
     width: 450px;
@@ -99,8 +102,12 @@
     .about .container{
         width: 95%;
     }
-    .about .container #person{
+    .about .container .img-per{
         width: 80%;
+    }
+    .about .container .img-per #person{
+        width: 100%;
+        margin: 60px 0;
     }
     .about .container p{
         width: 90%;
