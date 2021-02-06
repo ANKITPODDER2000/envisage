@@ -56,6 +56,39 @@ header {
   z-index: 3;
   filter: brightness(0.5);
 }
+@media screen and (max-width:600px){
+  .rock1{
+    left: 10%  !important;
+    top: 10% !important;
+  }
+  .rock1 img{
+    width: 50px;
+    filter: blur(1.2px) brightness(0.5);
+    zoom: 0.5;
+  }
+  .earth {
+    z-index: 4;
+  }
+  .earth img{
+    width: 200px;
+    height: 200px;
+    filter:  blur(1px) brightness(0.5);
+    left: -30px;
+  }
+  .fore img{
+    width: 250px;
+    filter: brightness(0.3) blur(1px);
+  }
+  .mid {
+    bottom: 0  !important;
+    left: 0  !important;
+    z-index: 5;
+  }
+  .mid img{
+    height: 350px;
+    filter: blur(0.2px);
+  }
+}
 .logo{
     position: absolute !important;
     top: calc(40% - 200px) !important;
@@ -67,6 +100,7 @@ header {
     align-items: center !important;
     flex-direction: column !important;
     color: #fff;
+    z-index: 6;
 }
 .logo img{
     /* position: relative; */

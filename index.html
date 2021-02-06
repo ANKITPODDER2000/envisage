@@ -18,15 +18,16 @@
             <i class="fas fa-bars" onclick="toggleActive()"></i>
             <i class="far fa-times-circle" onclick="toggleActive()"></i>
         </div>
-        <div class="overlay">
+        <div class="overlay" onmousemove="movemouse(event)">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About Envisage</a></li>
-                <li><a href="">Events</a></li>
-                <li><a href="">Team</a></li>
-                <li><a href="">GALLERY</a></li>
-                <li><a href="">sponsors</a></li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="">Home</a></li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="">About Envisage</a></li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="">Events</a></li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="">Team</a></li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="">GALLERY</a></li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="">sponsors</a></li>
             </ul>
+            <div class="cursor"></div>
         </div>
     </nav>
     <div id="main">
