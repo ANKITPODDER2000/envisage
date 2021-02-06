@@ -12,13 +12,11 @@ const movemouse = e => {
     cursor.style.left = (e.clientX - (window.innerWidth - overlay.offsetWidth)) + "px";
     cursor.style.top = e.clientY + "px";
 }
-
-
 const mousein = t => {
-    // t.style.mixBlendMode = 'difference';
+    //t.style.mixBlendMode = 'difference';
     cursor.classList.add('active');
 }
 const mouseout = t => {
-    // t.style.mixBlendMode = 'none';
+    //t.style.mixBlendMode = 'none';
     cursor.classList.remove('active');
 }
