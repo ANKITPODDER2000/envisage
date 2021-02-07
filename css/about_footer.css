@@ -1,0 +1,19 @@
+.wave3{
+    position: relative;
+    width: 100%;
+    z-index: 5;
+    display: block;
+    background: #000;
+}
+footer{
+    z-index: 5;
+    background: #fff;
+}
+
+#main > img.wave4,
+.timelinesvg,
+.timeline,
+.wave3,
+footer {
+    margin-top: -1px;
+}

@@ -4,15 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../css/background_animation.css">
     <link rel="stylesheet" href="../css/about_vision.css">
     <link rel="stylesheet" href="../css/about_timeline.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/about_footer.css">
     <title>ENVISAGE</title>
 </head>
 <body>
+    <nav>
+        <div class="handburger">
+            <i class="fas fa-bars" onclick="toggleActive()"></i>
+            <i class="far fa-times-circle" onclick="toggleActive()"></i>
+        </div>
+        <div class="overlay" onmousemove="movemouse(event)">
+            <ul>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="../index.html">Home</a></li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="#">About Envisage</a>
+                </li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="">Events</a></li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="">Team</a></li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="">GALLERY</a></li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="">sponsors</a></li>
+            </ul>
+            <div class="cursor"></div>
+        </div>
+    </nav>
     <div id="main">
-        <header class="content">
+        <header class="content" id="what">
             <h2 class="text" data-text="ENVISAGE 2021">
                 ENVISAGE 2021</h2>
             <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='71px' height='11px'>
@@ -37,7 +58,7 @@
             </div>
         </header>
         <img src="../images/svg/wave4.svg" alt="" class="wave4">
-        <div class="vision">
+        <div class="vision" id="goal">
             <div class="doc">
                 <h2>Our Goals</h2>
                 <span></span>
@@ -53,7 +74,7 @@
                 <img src="../images/svg/vision.svg" alt="" class="vis">
             </div>
         </div>
-        <img src="../images/svg/wave5.svg" alt="" class="wave5">
+        <img src="../images/svg/wave5.svg" alt="" class="wave5" id="timeline">
         <h1 class="timelineheader">TimeLine</h1>
         <div class="timelinesvg">
             <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='71px' height='11px'>
@@ -136,8 +157,77 @@
             </ul>
             <div style="clear: both;"></div>
         </div>
+        <img src="../images/svg/wave3.svg" alt="" class="wave3">
+        <!-- Starting of footer -->
+        <footer>
+            <div class="about-foot">
+                <h1>About us</h1>
+                <span></span>
+                <span></span>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Libero eveniet debitis
+                    provident repudiandae ipsam incidunt.
+                </p>
+                <div>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-globe-americas"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="links-foot">
+                <h1>Quick Links</h1>
+                <span></span>
+                <span></span>
+                <ul>
+                    <li>
+                        <a href="#what">What is Envisave</a>
+                    </li>
+                    <li>
+                        <a href="#goal">Our Goals</a>
+                    </li>
+                    <li>
+                        <a href="#timeline">Timeline</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-foot">
+                <h1>Contact</h1>
+                <span></span>
+                <span></span>
+                <div class="address">
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>
+                            TECHNO INDIA : EM-4/1, Sector-V,
+                            Salt Lake, Kolkata-700091,Wst Bengal
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+91 85150 05676</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <p>iic.tmsl@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
     </div>
     <script src="../js/ztext.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="https://kit.fontawesome.com/d2ca914d90.js" crossorigin="anonymous"></script>
     <script>
         var a = new Ztextify("#main > div.vision > div.vis-img", {
             depth: "20px",
@@ -158,6 +248,16 @@
             event: "pointer",
             eventRotation: "25deg"
         });
+        var checkScrollBars = function () {
+                var b = $('body');
+                var normalw = 0;
+                var scrollw = 0;
+                if (b.prop('scrollHeight') > b.height()) {
+                    normalw = window.innerWidth;
+                    scrollw = normalw - b.width();
+                    $('#container').css({ marginRight: '-' + scrollw + 'px' });
+                }
+            }
     </script>
 </body>
 </html>

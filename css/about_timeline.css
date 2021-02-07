@@ -107,3 +107,40 @@ h1.timelineheader{
     color: #fff;
     border-radius: 20px;
 }
+
+@media screen and (max-width:960px){
+    #main > div.timeline{
+        padding: 40px 20px;
+    }
+    #main > div.timeline::before{
+        left: 20px;
+    }
+    #main > div.timeline > ul > li{
+        position: relative;
+        width: 100%;
+        float: left;
+        text-align: left;
+        padding: 40px 0px 20px 40px;
+    }
+    #main > div.timeline > ul > li > div.time{
+        left: 30px;
+        padding: 7px 18px;
+        background-color: rgb(233,33,99);
+        color: #fff;
+        border-radius: 20px;
+        width: fit-content !important;
+        font-size: 18px;
+    }
+    #main > div.timeline > ul > li > div.time > h3{
+        font-size: 14px;
+    }
+    #main > div.timeline > ul > li > div.timelinecontent > h3{
+        margin-top: 25px;
+    }
+    .timeline ul li::before{
+        left: -4px;
+    }
+    .timeline::before{
+        height: 93%;
+    }
+}
