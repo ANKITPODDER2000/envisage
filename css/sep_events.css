@@ -1,6 +1,7 @@
 .wave7{
     z-index: 3;
-    position: sticky;
+    /* position: sticky; */
+    position: relative;
     top: 0;
     width: 100%;
 }
@@ -11,7 +12,7 @@
     z-index: 4;
     display: block;
     margin: 0 auto;
-    margin-top: -220px;
+    /* margin-top: -220px; */
     padding-bottom: 40px;
 }
 
@@ -23,6 +24,7 @@
     position: sticky;
     top: 0;
     z-index: 7;
+    background: #fff;
 }
 .evt > svg{
     fill: #FF1493;
@@ -90,7 +92,7 @@
 @media screen and (max-width:800px){
     .evt{
         width: 90%;
-        margin-top: -140px;
+        /* margin-top: -140px; */
     }
     .evt > h1{
         font-size: 40px;
@@ -101,12 +103,12 @@
 }
 @media screen and (max-width:700px){
     .evt{
-        margin-top: -100px;
+        /* margin-top: -100px; */
     }
 }
 @media screen and (max-width:400px){
     .evt{
-        margin-top: -30px;
+        /* margin-top: -30px; */
     }
 }
 /* Case study page */
@@ -171,4 +173,11 @@
 }
 #main > div:nth-child(6) a.link::before{
     background: #00e7ff;
+}
+
+@media screen and (max-width:432px){
+    .evt > h1{
+        font-size: 20px !important;
+        padding: 20px 0;
+    }
 }

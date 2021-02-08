@@ -124,3 +124,8 @@ footer .contact-foot > div > div > i{
         padding: 20px;
     }
 }
+@media screen and (max-width : 330px){
+    footer .about-foot > div{
+        width: fit-content !important;
+    }
+}
