@@ -1,0 +1,77 @@
+.wave7{
+    z-index: 3;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+.evt{
+    position: relative;
+    width: 80%;
+    min-height: 80vh;
+    z-index: 4;
+    display: block;
+    margin: 0 auto;
+    margin-top: -220px;
+}
+
+.evt > h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #FF1493;
+    text-align: center;
+}
+.evt > svg{
+    fill: #FF1493;
+    display: block;
+    margin: 0 auto;
+}
+.evt > .img{
+    position: relative;
+    width: 500px;
+    display: block;
+    margin: 60px auto 30px;
+}
+.evt > .img > img{
+    position: relative;
+    width: 100%;
+}
+.evt > span{
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #000;
+}
+.evt > span:nth-child(6){
+    width: 30px;
+    margin: 2px 0;
+}
+.evt > ul{
+    margin-top: 20px;
+}
+.evt > ul > li{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width:800px){
+    .evt{
+        width: 90%;
+        margin-top: -140px;
+    }
+    .evt > h1{
+        font-size: 40px;
+    }
+    .evt > .img{
+        width: 90%;
+    }
+}
+@media screen and (max-width:700px){
+    .evt{
+        margin-top: -100px;
+    }
+}
+@media screen and (max-width:400px){
+    .evt{
+        margin-top: -30px;
+    }
+}

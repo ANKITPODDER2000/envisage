@@ -1,0 +1,387 @@
+header{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #010101;
+    padding-top: 60px;
+}
+/* ----------------------Glitch text---------------------- */
+.content .text{
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    word-spacing: 20px;
+    font-family: 'Poppins';
+    text-align: center;
+    overflow-x: hidden;
+  }
+  .content .text:before,
+  .content .text:after {
+    color: white;
+    content: attr(data-text);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0004;
+    overflow: hidden;
+    top: 0;
+    word-spacing: 20px;
+  }
+  .content .text:before{
+    left: 3px;
+    text-shadow: -2px 0 red;
+    animation: glitch-1 2s linear infinite reverse;
+  }
+  .content .text:after{
+    left: -3px;
+    text-shadow: -2px 0 blue;
+    animation: glitch-2 2s linear infinite reverse;
+  }
+  @keyframes glitch-1 {
+    0% {
+      clip: rect(132px, auto, 101px, 30px);
+    }
+    5% {
+      clip: rect(17px, auto, 94px, 30px);
+    }
+    10% {
+      clip: rect(40px, auto, 66px, 30px);
+    }
+    15% {
+      clip: rect(87px, auto, 82px, 30px);
+    }
+    20% {
+      clip: rect(137px, auto, 61px, 30px);
+    }
+    25% {
+      clip: rect(34px, auto, 14px, 30px);
+    }
+    30% {
+      clip: rect(133px, auto, 74px, 30px);
+    }
+    35% {
+      clip: rect(76px, auto, 107px, 30px);
+    }
+    40% {
+      clip: rect(59px, auto, 130px, 30px);
+    }
+    45% {
+      clip: rect(29px, auto, 84px, 30px);
+    }
+    50% {
+      clip: rect(22px, auto, 67px, 30px);
+    }
+    55% {
+      clip: rect(67px, auto, 62px, 30px);
+    }
+    60% {
+      clip: rect(10px, auto, 105px, 30px);
+    }
+    65% {
+      clip: rect(78px, auto, 115px, 30px);
+    }
+    70% {
+      clip: rect(105px, auto, 13px, 30px);
+    }
+    75% {
+      clip: rect(15px, auto, 75px, 30px);
+    }
+    80% {
+      clip: rect(66px, auto, 39px, 30px);
+    }
+    85% {
+      clip: rect(133px, auto, 73px, 30px);
+    }
+    90% {
+      clip: rect(36px, auto, 128px, 30px);
+    }
+    95% {
+      clip: rect(68px, auto, 103px, 30px);
+    }
+    100% {
+      clip: rect(14px, auto, 100px, 30px);
+    }
+  }
+  @keyframes glitch-2 {
+    0% {
+      clip: rect(129px, auto, 36px, 30px);
+    }
+    5% {
+      clip: rect(36px, auto, 4px, 30px);
+    }
+    10% {
+      clip: rect(85px, auto, 66px, 30px);
+    }
+    15% {
+      clip: rect(91px, auto, 91px, 30px);
+    }
+    20% {
+      clip: rect(148px, auto, 138px, 30px);
+    }
+    25% {
+      clip: rect(38px, auto, 122px, 30px);
+    }
+    30% {
+      clip: rect(69px, auto, 54px, 30px);
+    }
+    35% {
+      clip: rect(98px, auto, 71px, 30px);
+    }
+    40% {
+      clip: rect(146px, auto, 34px, 30px);
+    }
+    45% {
+      clip: rect(134px, auto, 43px, 30px);
+    }
+    50% {
+      clip: rect(102px, auto, 80px, 30px);
+    }
+    55% {
+      clip: rect(119px, auto, 44px, 30px);
+    }
+    60% {
+      clip: rect(106px, auto, 99px, 30px);
+    }
+    65% {
+      clip: rect(141px, auto, 74px, 30px);
+    }
+    70% {
+      clip: rect(20px, auto, 78px, 30px);
+    }
+    75% {
+      clip: rect(133px, auto, 79px, 30px);
+    }
+    80% {
+      clip: rect(78px, auto, 52px, 30px);
+    }
+    85% {
+      clip: rect(35px, auto, 39px, 30px);
+    }
+    90% {
+      clip: rect(67px, auto, 70px, 30px);
+    }
+    95% {
+      clip: rect(71px, auto, 103px, 30px);
+    }
+    100% {
+      clip: rect(83px, auto, 40px, 30px);
+    }
+  }
+  
+  @media screen and (max-width:590px){
+      header{
+          padding-top: 80px;
+      }
+      .content .text{
+          font-size: 30px;
+          margin-bottom: 10px;
+          word-spacing: 5px;
+      }
+  }
+  
+  /* ----------------------Glitch text---------------------- */
+
+#main > .content > img.bg{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+#main > .content > svg{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    fill: #fff;
+    z-index: 10;
+    margin-top: 10px;
+}
+#main > .content > .container{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#main > .content > .container > div{
+    position: relative;
+    width: 30%;
+    height: 210px;
+    margin: 30px 10px;
+    cursor: pointer;
+    background: #fff;
+    box-shadow: 0 0 10px #fff4;
+    border-radius: 20px;
+    padding: 40px 20px 10px;
+}
+#main > .content > .container > div > .header,
+#main > .content > .container > div > .para,
+#main > .content > .container > div > .link{
+    /* transform: translateY(400px); */
+    opacity: 0;
+    transition-duration: 0.3s;
+    transition-duration: 0.6s;
+}
+#main > .content > .container > div:hover > .header,
+#main > .content > .container > div:hover > .para,
+#main > .content > .container > div:hover > .link{
+    opacity: 1;
+    /* transform: translateY(0); */
+}
+#main > .content > .container > div > span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.7s;
+    border-radius: 20px;
+    z-index: 5;
+}
+#main > .content > .container > div > span::before{
+    position: absolute;
+    content: attr(data-text);
+    position: absolute;
+    bottom: 10px;
+    font-weight: 700;
+    color: #0004;
+    font-size: 24px;
+}
+#main > .content > .container > div:hover > span::before{
+    opacity: 0;
+}
+#main > .content > .container > div:nth-child(3n+1)  > span{
+    background: linear-gradient(to right ,#319635 50% , #4caf50 50% 100%);
+}
+#main > .content > .container > div:nth-child(3n+2) > span{
+    background: linear-gradient(to right ,#d03852 50% , #f54967 50% 100%);
+}
+#main > .content > .container > div:nth-child(3n+3)  > span{
+    background: linear-gradient(to right ,#23798e 50% , #328fa5 50% 100%);
+}
+#main > .content > .container > div > span > i{
+    font-size: 30px;
+    color: #000;
+    transition: 0.5s;
+}
+#main > .content > .container > div > span > h2{
+    transition-delay: 0.5s;
+    transition-duration: 0.1s;
+}
+#main > .content > .container > div:hover > span{
+    top: 0;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+#main > .content > .container > div:hover > span > i{
+    /* position: absolute; */
+    font-size: 24px;
+
+}
+#main > .content > .container > div:nth-child(3n+1):hover > span{
+    box-shadow: 0 0 1px #319635,
+                0 0 3px #319635,
+                0 0 9px #319635,
+                0 0 18px #319635;
+}
+#main > .content > .container > div:nth-child(3n+2):hover > span{
+    box-shadow: 0 0 1px #d03852,
+                0 0 3px #d03852,
+                0 0 9px #d03852,
+                0 0 18px #d03852;
+}
+#main > .content > .container > div:nth-child(3n+3):hover > span{
+    box-shadow: 0 0 1px #23798e,
+                0 0 3px #23798e,
+                0 0 9px #23798e,
+                0 0 18px #23798e;
+}
+#main > .content > .container > div > .link{
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    margin-top: 10px;
+    display: block;
+}
+#main > .content > .container > div > .link:hover{
+    letter-spacing: 2px;
+}
+@media screen and (max-width:1060px){
+    #main > .content > .container{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #main > .content > .container > div{
+        width: 300px;
+    }
+}
+@media screen and (max-width:360px){
+    #main > .content > img.bg{
+        transform: translateY(20px);
+    }
+    #main > .content > .container > div{
+        width: 280px;
+    }
+    #main > .content > .container > div > span{
+        top: 0;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    #main > .content > .container > div > span > i{
+        margin: 0;
+        font-size: 24px;
+    }
+    #main > .content > .container > div > span > h2{
+        display: none;
+    }
+    #main > .content > .container > div:nth-child(3n+1) > span{
+        box-shadow: 0 0 1px #319635,
+                    0 0 3px #319635,
+                    0 0 9px #319635,
+                    0 0 18px #319635;
+    }
+    #main > .content > .container > div:nth-child(3n+2) > span{
+        box-shadow: 0 0 1px #d03852,
+                    0 0 3px #d03852,
+                    0 0 9px #d03852,
+                    0 0 18px #d03852;
+    }
+    #main > .content > .container > div:nth-child(3n+3) > span{
+        box-shadow: 0 0 1px #23798e,
+                    0 0 3px #23798e,
+                    0 0 9px #23798e,
+                    0 0 18px #23798e;
+    }
+    #main > .content > .container > div > span::before{
+        opacity: 0;
+    }
+    #main > .content > .container > div > .header,
+    #main > .content > .container > div > .para,
+    #main > .content > .container > div > .link{
+        opacity: 1;
+        /* transform: translateY(0); */
+    }
+}
+/* 
+.content .text,
+#main > .content > svg,
+#main > .content > .container{
+    transform: translateY(-250px);
+} */
