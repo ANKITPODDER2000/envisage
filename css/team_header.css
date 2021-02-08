@@ -1,4 +1,4 @@
-#main > header.content{
+#main > .content{
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -7,7 +7,10 @@
     justify-content: center;
     align-items: flex-start;
 }
-#main > header.content > .pos{
+#main > .content.coordinators{
+    flex-direction: row-reverse;
+}
+#main > .content > .pos{
     position: sticky;
     width: 70px;
     height: 100vh;
@@ -20,17 +23,20 @@
     align-items: center;
     flex-direction: column;
 }
-#main > header.content > .pos > i{
+#main > .content.coordinators > .pos{
+    background:#eb1745;
+}
+#main > .content > .pos > i{
     font-size: 26px;
     margin-bottom: 20px;
 }
-#main > header.content > .pos > p{
+#main > .content > .pos > p{
     font-size: 20px;
     text-transform: uppercase;
-    letter-spacing: -2px;
-    line-height: 23px;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
 }
-#main > header.content > .pos::before{
+#main > .content > .pos::before{
     position: absolute;
     content: '';
     right: 0;
@@ -41,7 +47,12 @@
     height: 30px;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
-#main > header.content > .container{
+#main > .content.coordinators > .pos::before{
+    background:#eb1745;
+    left: 0;
+    transform: translate(-100% , -50%) rotate(-90deg);
+}
+#main > .content > .container{
     position: relative;
     width: calc(100% - 70px);
     min-height: 100vh;
@@ -51,7 +62,7 @@
     flex-wrap: wrap;
     padding: 60px 90px;
 }
-#main > header.content > .container > .box{
+#main > .content > .container > .box{
     position: relative;
     width: 300px;
     height: 400px;
@@ -62,30 +73,36 @@
     margin: 20px 30px;
     background: rgba(255,255,255,0.05);
     color: #fff;
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
     border-radius: 20px;
     box-shadow: 0 15px 25px rgba(0,0,0,0.2);
     overflow: hidden;
 }
-#main > header.content > .container > .box > img{
+#main > .content > .container > .box > img{
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 10px solid rgba(0,0,0,0.25);
+    transition: 0.5s;
 }
-#main > header.content > .container > .box > h1{
+#main > .content > .container > .box > h1{
     font-size: 20px;
     margin: 20px 0 10px;
     text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    width: 90%;
 }
-#main > header.content > .container > .box > h3{
+#main > .content > .container > .box > h3{
     text-align: center;
     font-size: 16px;
     width: 85%;
     position: relative;
     margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-weight: 300;
 }
-#main > header.content > .container > .box > .contact{
+#main > .content > .container > .box > .contact{
     position: relative;
     display: block;
     margin: 0 auto;
@@ -95,7 +112,7 @@
     align-items: center;
     flex-direction: row;
 }
-#main > header.content > .container > .box > .contact > a{
+#main > .content > .container > .box > .contact > a{
     text-decoration: none;
     color: #fff;
     transform: translateY(60px);
@@ -109,16 +126,88 @@
     text-align: center;
     line-height: 30px;
 }
-#main > header.content > .container > .box > .contact > a:nth-child(1){
+#main > .content > .container > .box > .contact > a:nth-child(1){
     transition-delay: 0.1s;
 }
-#main > header.content > .container > .box > .contact > a:nth-child(2){
+#main > .content > .container > .box > .contact > a:nth-child(2){
     transition-delay: 0.2s;
 }
-#main > header.content > .container > .box > .contact > a:nth-child(3){
+#main > .content > .container > .box > .contact > a:nth-child(3){
     transition-delay: 0.3s;
 }
-#main > header.content > .container > .box:hover > .contact > a{
+#main > .content > .container > .box:hover > .contact > a{
     transform: translateY(0);
     opacity: 1;
+}
+#main > .content > .container > .box:hover > img{
+    filter: grayscale(1);
+    transform: scale(1.05);
+}
+
+/* Make it responsive */
+@media screen and (max-width:760px){
+    #main > .content,
+    #main > .content.coordinators{
+        flex-direction: column;
+    }
+    #main > .content > .pos{
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px !important;
+        z-index: 10;
+    }
+    #main > .content > .pos > i{
+        margin: 0 20px 0;
+    }
+    #main > .content > .pos > p{
+        writing-mode: horizontal-tb;
+    }
+    #main > .content > .pos::before,
+    #main > .content.coordinators >.pos::before{
+        clip-path: circle(50% at 50% 100%);
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50% , 100%) rotate(180deg);
+        z-index: 6;
+    }
+
+    #main > .content > .container{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        padding: 50px 8%;
+        z-index: 0;
+    }
+}
+@media screen and (max-width:460px){
+    #main > .content > .container > .box{
+        width: 280px;
+        margin: 35px 0;
+    }
+    #main > .content > .container > .box > .contact > a{
+        text-decoration: none;
+        color: #fff;
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@media screen and (max-width:450px){
+    #main > .content.coordinators > .pos,
+    #main > .content > .pos{
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width:310px){
+    #main > .content > .container{
+        padding: 50px 0;
+    }
+    #main > .content > .container > .box{
+        width: 80%;
+    }
 }
