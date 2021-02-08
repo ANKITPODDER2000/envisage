@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="../css/footer.css">
     <title>ENVISAGE</title>
 </head>
-<body>
+<body onscroll="isneedtoscrollup()">
+    <div class="slidetop">
+        <a href="#main"><i class="fas fa-arrow-up"></i></a>
+    </div>
     <nav>
         <div class="handburger">
             <i class="fas fa-bars" onclick="toggleActive()"></i>
@@ -18,10 +21,10 @@
         </div>
         <div class="overlay" onmousemove="movemouse(event)">
             <ul>
-                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="">Home</a></li>
-                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="./html/about.html">About Envisage</a></li>
-                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="./html/events.html">Events</a></li>
-                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="">Team</a></li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="../index.html">Home</a></li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="./about.html">About Envisage</a></li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="./events.html">Events</a></li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="#">Team</a></li>
                 <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="">GALLERY</a></li>
                 <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="">sponsors</a></li>
             </ul>
