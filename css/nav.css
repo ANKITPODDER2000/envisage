@@ -1,6 +1,6 @@
 nav,
 body > nav > div{
-    z-index: 99;
+    z-index: 9999;
 }
 nav > .overlay {
     overflow: hidden;
@@ -39,7 +39,7 @@ body > nav > div:nth-child(1){
     background: #e01b5c;
     border-radius: 50%;
     transition: 0.5s;
-    z-index: 100;
+    z-index: 10000;
     box-shadow: 0 0 5px #0004;
 }
 body > nav > div:nth-child(1).active{
@@ -112,4 +112,31 @@ nav > .overlay.active > ul > li > a{
     opacity: 1;
     transition-delay: 0.5s;
     transition-duration: 0.5s;
+}
+
+/* slidetop */
+.slidetop{
+    position: fixed;
+    bottom: 2220px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #0008;
+    box-shadow: 0 0 20px #fff3;
+    z-index: 1000;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0;
+    transition: 1s;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+.slidetop a{
+    color: #fff;
+}
+.slidetop.active{
+    opacity: 1;
+    bottom: 20px;
+    transition: 1s;
 }
