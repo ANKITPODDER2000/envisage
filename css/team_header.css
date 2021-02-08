@@ -197,7 +197,7 @@
         opacity: 1;
     }
 }
-@media screen and (max-width:4500px){
+@media screen and (max-width:450px){
     #main > .content.coordinators > .pos,
     #main > .content > .pos{
         justify-content: flex-start;
