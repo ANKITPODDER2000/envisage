@@ -12,6 +12,7 @@
     display: block;
     margin: 0 auto;
     margin-top: -220px;
+    padding-bottom: 40px;
 }
 
 .evt > h1{
@@ -19,6 +20,9 @@
     margin-bottom: 10px;
     color: #FF1493;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 7;
 }
 .evt > svg{
     fill: #FF1493;
@@ -53,6 +57,36 @@
     margin-left: 20px;
     margin-bottom: 10px;
 }
+.evt > a.link{
+    position: relative;
+    margin-top: 15px;
+    padding: 15px 30px;
+    text-decoration: none;
+    /* background: #FF1493; */
+    display: inline-block;
+    color: #FF1493;
+    transition: 0.5s;
+    z-index: 5;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.evt > a.link:hover{
+    color: #fff;
+}
+.evt > a.link::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #FF1493;
+    transition: 0.5s;
+    z-index: -1;
+}
+.evt > a.link:hover::before{
+    height: 100%;
+}
 @media screen and (max-width:800px){
     .evt{
         width: 90%;
@@ -74,4 +108,67 @@
     .evt{
         margin-top: -30px;
     }
+}
+/* Case study page */
+.case{
+    position: relative;
+    width: 100%;
+    padding: 0 10%;
+    background: #000;
+    color: #fff;
+}
+.case span{
+    background: #fff;
+}
+.case h1{
+    color: #6c77ff;
+    position: sticky;
+    top: 0;
+    background: #000;
+    z-index: 7;
+}
+.case svg{
+    fill: #6c77ff;
+}
+.case a.link{
+    color: #6c77ff;
+}
+.case a.link::before{
+    background: #6c77ff;
+}
+
+/* Event with white bg */
+.evt.white{
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.evt.white h1{
+    background: #fff;
+    color: #ff1414;
+}
+.evt.white svg{
+    fill: #ff1414;
+}
+.white a.link{
+    color: #ff1414;
+}
+.white a.link::before{
+    background: #ff1414;
+}
+
+/* B-quiz */
+#main > div:nth-child(6) svg{
+    fill: #00e7ff;
+}
+#main > div:nth-child(6) a.link{
+    color: #00e7ff;
+}
+#main > div:nth-child(6) a.link:hover{
+    color: #fff;
+}
+#main > div:nth-child(6) a.link::before{
+    background: #00e7ff;
 }
