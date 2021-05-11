@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/background_animation.css">
+    <link rel="stylesheet" href="../css/about_vision.css">
+    <link rel="stylesheet" href="../css/about_timeline.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/about_footer.css">
+    <title>ENVISAGE</title>
+</head>
+<body onscroll="isneedtoscrollup()">
+    <div class="slidetop">
+        <a href="#main"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <nav>
+        <div class="handburger">
+            <i class="fas fa-bars" onclick="toggleActive()"></i>
+            <i class="far fa-times-circle" onclick="toggleActive()"></i>
+        </div>
+        <div class="overlay" onmousemove="movemouse(event)">
+            <ul>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="../index.html">Home</a></li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="#">About Envisage</a>
+                </li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="./events.html">Events</a></li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="./team.html">Team</a></li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="./gallery.html">GALLERY</a></li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="./sponsors.html">sponsors</a></li>
+            </ul>
+            <div class="cursor"></div>
+        </div>
+    </nav>
+    <div id="main">
+        <header class="content" id="what">
+            <h2 class="text" data-text="ENVISAGE 2021">
+                ENVISAGE 2021</h2>
+            <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='71px' height='11px'>
+                <path fill-rule='evenodd'
+                    d='M59.669,10.710 L49.164,3.306 L39.428,10.681 L29.714,3.322 L20.006,10.682 L10.295,3.322 L1.185,10.228 L-0.010,8.578 L10.295,0.765 L20.006,8.125 L29.714,0.765 L39.428,8.125 L49.122,0.781 L59.680,8.223 L69.858,1.192 L70.982,2.895 L59.669,10.710 Z' />
+            </svg>
+            <div class="container">
+                <div class="img-explore">
+                    <img src="../images/svg/explore.svg" alt="">
+                </div>
+                <div class="doc">
+                    <h2>What is Envisage</h2>
+                    <span></span>
+                    <p>
+                        Envisage is the official E-Summit of Techno Main Salt Lake. It is born out of the dreams and aspirations of the youth who have the zest and the zeal to take their future into their own hands. Supporting the growing startup culture in the country, we are promised to inculcate and identify the best ideas and b-plans. Envisage is the platform for budding entrepreneurs to showcase the power of their ideas and to be appreciated and mentored by the best in the fields. So come along be a part of this wonderful and exciting journey.
+                    </p>
+                </div>
+            </div>
+        </header>
+        <img src="../images/svg/wave4.svg" alt="" class="wave4">
+        <div class="vision" id="goal">
+            <div class="doc">
+                <h2>Our Goals</h2>
+                <span></span>
+                <p>
+                    Our goal is to provide a platform for budding entrepreneurs to showcase the power of their ideas and to be appreciated and mentored by the best in the fields.
+                </p>
+            </div>
+            <div class="vis-img">
+                <img src="../images/svg/vision.svg" alt="" class="vis">
+            </div>
+        </div>
+        <img src="../images/svg/wave5.svg" alt="" class="wave5" id="timeline">
+        <h1 class="timelineheader">TimeLine</h1>
+        <div class="timelinesvg">
+            <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='71px' height='11px'>
+                <path fill-rule='evenodd'
+                    d='M59.669,10.710 L49.164,3.306 L39.428,10.681 L29.714,3.322 L20.006,10.682 L10.295,3.322 L1.185,10.228 L-0.010,8.578 L10.295,0.765 L20.006,8.125 L29.714,0.765 L39.428,8.125 L49.122,0.781 L59.680,8.223 L69.858,1.192 L70.982,2.895 L59.669,10.710 Z' />
+            </svg>
+        </div>
+        <div class="timeline">
+            <ul>
+                <li>
+                    <div class="timelinecontent">
+                        <h3>Induction</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Libero totam, qui fugit
+                            voluptates beatae laudantium, ea magnam
+                            saepe, accusamus impedit non nisi minima.
+                        </p>
+                    </div>
+                    <div class="time">
+                        <h3>1st March, 2021</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="timelinecontent">
+                        <h3>Induction</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Libero totam, qui fugit
+                            voluptates beatae laudantium, ea magnam
+                            saepe, accusamus impedit non nisi minima.
+                        </p>
+                    </div>
+                    <div class="time">
+                        <h3>1st March, 2021</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="timelinecontent">
+                        <h3>Induction</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Libero totam, qui fugit
+                            voluptates beatae laudantium, ea magnam
+                            saepe, accusamus impedit non nisi minima.
+                        </p>
+                    </div>
+                    <div class="time">
+                        <h3>1st March, 2021</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="timelinecontent">
+                        <h3>Induction</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Libero totam, qui fugit
+                            voluptates beatae laudantium, ea magnam
+                            saepe, accusamus impedit non nisi minima.
+                        </p>
+                    </div>
+                    <div class="time">
+                        <h3>1st March, 2021</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="timelinecontent">
+                        <h3>Induction</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Libero totam, qui fugit
+                            voluptates beatae laudantium, ea magnam
+                            saepe, accusamus impedit non nisi minima.
+                        </p>
+                    </div>
+                    <div class="time">
+                        <h3>1st March, 2021</h3>
+                    </div>
+                </li>
+            </ul>
+            <div style="clear: both;"></div>
+        </div>
+        <img src="../images/svg/wave3.svg" alt="" class="wave3">
+        <!-- Starting of footer -->
+        <footer>
+            <div class="about-foot">
+                <h1>About us</h1>
+                <span></span>                
+                <span></span>
+                <p>Envisage is the official E-Summit of Techno Main Salt Lake organized by IIC-TMSL.
+                </p>
+                <div>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-globe-americas"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="links-foot">
+                <h1>Quick Links</h1>
+                <span></span>                
+                <span></span>
+                <ul>
+                    <li>
+                        <a href="#about">About Envisage</a>
+                    </li>
+                    <li>
+                        <a href="#event">Events</a>
+                    </li>
+                    <li>
+                        <a href="#">Team</a>
+                    </li>
+                    <li>
+                        <a href="#">Galary</a>
+                    </li>
+                    <li>
+                        <a href="#">Participate</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-foot">
+                <h1>Contact</h1>
+                <span></span>                
+                <span></span>
+                <div class="address">
+                    <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>
+                                TECHNO INDIA : EM-4/1, Sector-V,
+                                Salt Lake, Kolkata-700091,Wst Bengal
+                            </p>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+91 85150 05676</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <p>iic.tmsl@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+    <script src="../js/ztext.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="https://kit.fontawesome.com/d2ca914d90.js" crossorigin="anonymous"></script>
+    <script>
+        var a = new Ztextify("#main > div.vision > div.vis-img", {
+            depth: "20px",
+            layers: 10,
+            fade: true,
+            direction: "forwards",
+            eventDirection: "reverse",
+            event: "pointer",
+            eventRotation: "25deg"
+        });
+
+        var b = new Ztextify(".img-explore", {
+            depth: "10px",
+            layers: 10,
+            fade: true,
+            direction: "forwards",
+            eventDirection: "reverse",
+            event: "pointer",
+            eventRotation: "25deg"
+        });
+        var checkScrollBars = function () {
+                var b = $('body');
+                var normalw = 0;
+                var scrollw = 0;
+                if (b.prop('scrollHeight') > b.height()) {
+                    normalw = window.innerWidth;
+                    scrollw = normalw - b.width();
+                    $('#container').css({ marginRight: '-' + scrollw + 'px' });
+                }
+            }
+    </script>
+</body>
+</html>

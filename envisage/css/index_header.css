@@ -1,0 +1,146 @@
+header {
+  height: 100vh;
+  background: #000;
+  overflow: hidden;
+  background: url("../images/bg_emoji/background.png") , #0008;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+}
+.bg img {
+  width: 110vw;
+  height: 110vh;
+  filter: brightness(0.4);
+  opacity: 0;
+}
+.rock1 {
+  position: absolute !important;
+  left: 30vw !important;
+  top: 20vh !important;
+}
+.rock1 img {
+  width: 40%;
+  filter: brightness(0.5);
+}
+.earth img {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 34vw;
+  top: 25vh;
+  z-index: 1;
+  filter: brightness(0.4);
+}
+.mid {
+  left: -150px !important;
+  bottom: -100px !important;
+  top: unset !important;
+}
+.mid img {
+  width: 100%;
+  z-index: 2;
+  left: -20px;
+  top: 20vh !important;
+  filter: brightness(0.8);
+}
+.fore {
+  right: -50px !important;
+  bottom: -200px !important;
+  top: 0px !important;
+  left: unset !important;
+}
+.fore img {
+  width: 400px;
+  height: 110vh;
+  z-index: 3;
+  filter: brightness(0.5);
+}
+@media screen and (max-width:600px){
+  .rock1{
+    left: 10%  !important;
+    top: 10% !important;
+  }
+  .rock1 img{
+    width: 50px;
+    filter: blur(1.2px) brightness(0.5);
+    zoom: 0.5;
+  }
+  .earth {
+    z-index: 4;
+  }
+  .earth img{
+    width: 200px;
+    height: 200px;
+    filter:  blur(1px) brightness(0.5);
+    left: -30px;
+  }
+  .fore img{
+    width: 250px;
+    filter: brightness(0.3) blur(1px);
+  }
+  .mid {
+    bottom: 0  !important;
+    left: 0  !important;
+    z-index: 5;
+  }
+  .mid img{
+    height: 350px;
+    filter: blur(0.2px);
+  }
+}
+.logo{
+    position: absolute !important;
+    top: calc(40% - 200px) !important;
+    left: calc(50% - 200px) !important;
+    width: 400px !important;
+    height: 400px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    color: #fff;
+    z-index: 6;
+}
+.logo img{
+    /* position: relative; */
+    width: 300px;
+}
+.logo h1{
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: consolas;
+}
+.logo .counter{
+    position: relative;
+    width: 280px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.logo .counter span{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo .counter span h3{
+    font-size: 26px;
+}
+.logo .counter span hr{
+    display: block;
+    width: 80%;
+    background: #fff;
+    opacity: 0.4;
+    margin: 5px 0;
+}
+.logo .counter span p{
+    font-size: 14px;
+    color: #fff;
+}

@@ -1,0 +1,56 @@
+.participate{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/bg_emoji/count_num.jpg) , #0009;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+.participate .container{
+    position: relative;
+    width: 100%;
+    min-height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: #fff;
+    flex-wrap: wrap;
+}
+.participate .container > div{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.participate .container > div > i{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.participate .container > div > span{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.participate .container > div > p{
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+.participate img{
+    width: 100%;
+    margin-bottom: -15px;
+}
+@media screen and (max-width : 415px){
+    .participate .container{
+        padding-bottom: 50px;
+    }
+    .participate .container > div{
+        height: 220px;
+    }
+    .participate .container > div > p{
+        font-size: 22px;
+    }
+}

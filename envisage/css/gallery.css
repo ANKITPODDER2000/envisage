@@ -1,0 +1,77 @@
+#main{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #000;
+}
+#main .neon{
+    position: relative;
+    padding-top: 60px;
+}
+#main .neon > h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 10px;
+    text-align: center;
+    text-shadow: 0 0 10px #00b3ff,
+                 0 0 20px #00b3ff;
+}
+#main .neon > svg{
+    fill: #fff;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+#main > .container{
+    padding-top: 50px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+        flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+#main > .container > .row{
+    position: relative;
+    flex: 25%;
+    max-width: 25%;
+}
+#main > .container > .row > .img{
+    position: relative;
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+#main > .container > .row > .img > img{
+    position: relative;
+    width: 100%;
+    object-fit: contain;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+#main > .container > .row > .img > img:hover{
+    transform: scale(1.1);
+    filter: grayscale(0.5);
+}
+@media screen and (max-width:1200px){
+    #main > .container > .row{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width:750px){
+    #main > .container > .row{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width : 350px){
+    #main .neon > h1{
+        padding-top: 30px;
+        font-size: 36px;
+    }
+}
