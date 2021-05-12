@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/event_header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/sep_events.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <title>ENVISAGE</title>
+</head>
+<body onscroll="isneedtoscrollup()">
+    <div class="slidetop">
+        <a href="#main"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <nav>
+        <div class="handburger">
+            <i class="fas fa-bars" onclick="toggleActive()"></i>
+            <i class="far fa-times-circle" onclick="toggleActive()"></i>
+        </div>
+        <div class="overlay" onmousemove="movemouse(event)">
+            <ul>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="../index.html">Home</a></li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="./about.html">About Envisage</a>
+                </li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="#">Events</a></li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="./team.html">Team</a></li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="./gallery.html">GALLERY</a></li>
+                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="./sponsors.html">sponsors</a></li>
+            </ul>
+            <div class="cursor"></div>
+        </div>
+    </nav>
+    <div id="main">
+        <header class="content">
+            <!-- Background SVG -->
+            <img src="../images/svg/wave6.svg" alt="" class="bg">
+            <h1 class="text" data-text="EVENTS OF ENVISAGE 2021">EVENTS OF ENVISAGE 2021</h1>
+            <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='71px' height='11px'>
+                <path fill-rule='evenodd'
+                    d='M59.669,10.710 L49.164,3.306 L39.428,10.681 L29.714,3.322 L20.006,10.682 L10.295,3.322 L1.185,10.228 L-0.010,8.578 L10.295,0.765 L20.006,8.125 L29.714,0.765 L39.428,8.125 L49.122,0.781 L59.680,8.223 L69.858,1.192 L70.982,2.895 L59.669,10.710 Z' />
+            </svg>
+            <div class="container">
+                <div>
+                    <span data-text="Biz-Plan">
+                        <i class="fas fa-chart-line"></i>
+                        <!-- <h2></h2> -->
+                    </span>
+                    <h2 class="header">Biz-Plan</h2>
+                    <div></div>
+                    <p class="para">Biz-Plan is an opportunity to reward young entrepreneurs with wise business ideas.</p>
+                    <a class="link" href="#wave7">Know More <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+                <div>
+                    <span data-text="Case Study">
+                        <i class="fas fa-book-open"></i>
+                        <!-- <h2></h2> -->
+                    </span>
+                    <h2 class="header">Case Study</h2>
+                    <div></div>
+                    <p class="para">Case-Study is an opportunity to develop the best solution to a real business problem.</p>
+                    <a class="link" href="#case">Know More <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+                <div>
+                    <span data-text="Stockify">
+                        <i class="fas fa-chart-pie"></i>
+                        <!-- <h2></h2> -->
+                    </span>
+                    <h2 class="header">Stockify</h2>
+                    <div></div>
+                    <p class="para">Stockify is an online simulation trading game to create & manage your own portfolio.</p>
+                    <a class="link" href="#stockify">Know More <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+                <div>
+                    <span data-text="B-Quiz">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <!-- <h2></h2> -->
+                    </span>
+                    <h2 class="header">B-Quiz</h2>
+                    <div></div>
+                    <p class="para">B-Quiz is a Quiz event on relevant business topics and the market scenario.</p>
+                    <a class="link" href="#quiz">Know More <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+                <div>
+                    <span data-text="Analytix">
+                        <i class="fas fa-microphone-alt"></i>
+                        <!-- <h2></h2> -->
+                    </span>
+                    <h2 class="header">Analytix</h2>
+                    <div></div>
+                    <p class="para">Analytix is an event to design a solution using data analytics for a given problem statement.</p>
+                    <a class="link" href="#">Know More <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+                <div>
+                    <span data-text="Content Writing">
+                        <i class="fas fa-pen-nib"></i>
+                        <!-- <h2></h2> -->
+                    </span>
+                    <h2 class="header">Content Writing</h2>
+                    <div></div>
+                    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, atque!</p>
+                    <a class="link" href="#">Know More <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+            </div>
+        </header>
+        <img src="../images/svg/wave7.svg" alt="" class="wave7" id="wave7">
+        <div class="evt">
+            <h1>Biz-Plan</h1>
+            <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='71px' height='11px'>
+                <path fill-rule='evenodd'
+                    d='M59.669,10.710 L49.164,3.306 L39.428,10.681 L29.714,3.322 L20.006,10.682 L10.295,3.322 L1.185,10.228 L-0.010,8.578 L10.295,0.765 L20.006,8.125 L29.714,0.765 L39.428,8.125 L49.122,0.781 L59.680,8.223 L69.858,1.192 L70.982,2.895 L59.669,10.710 Z' />
+            </svg>
+            <div class="img">
+                <img src="../images/svg/analytix.svg" alt="">
+            </div>
+            <h2>Description</h2>
+            <span></span>
+            <span style="margin-bottom: 20px;"></span>
+            <p style="margin-bottom: 30px;">
+                An opportunity to buckle young entrepreneurs with wise business ideas to stand a chance to get well rewarded. Dedicated to spark the spirit of entrepreneurship and pave the way from an idea to professional success, this event will provide a platform to showcase your witty impromptu thinking and your budding startup ideas in front of an esteemed panel of investors and dazzle the audience.
+            </p>
+            <h2>Rule</h2>
+            <span></span>
+            <span></span>
+            <ul>
+                <li>The competition is open to everyone. The teams must apply with their pitch deck.</li>
+                <li>A team can consist of a maximum of 5 members. Individual participation is also accepted. Only one of the team members should register as Team Leader.</li>
+                <li>One participant cannot be a part of multiple teams</li>
+                <li>The team structure is inflexible once the registration is complete.</li>
+                <li>Each team will be allotted 5 minutes (4 minutes for explaining their ideas and 1 minute for Q&A round).</li>
+                <li>Top three teams will get a chance to be mentored by renowned investors and entrepreneurs and the winner will also get investment in their ideas allocated by the investors.</li>
+            </ul>
+            <a href="#" class="link">Register</a>
+        </div>
+        <div class="evt case" id="case" style="margin-top: 0px;padding-top: 60px;padding-bottom: 40px;">
+            <h1>Case Study</h1>
+            <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='71px' height='11px'>
+                <path fill-rule='evenodd'
+                    d='M59.669,10.710 L49.164,3.306 L39.428,10.681 L29.714,3.322 L20.006,10.682 L10.295,3.322 L1.185,10.228 L-0.010,8.578 L10.295,0.765 L20.006,8.125 L29.714,0.765 L39.428,8.125 L49.122,0.781 L59.680,8.223 L69.858,1.192 L70.982,2.895 L59.669,10.710 Z' />
+            </svg>
+            <div class="img">
+                <img src="../images/svg/study.svg" alt="">
+            </div>
+            <h2>Rule</h2>
+            <span></span>
+            <span></span>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quibusdam.</li>
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quidem unde ad minima numquam dolore velit laborum quos quod autem!</li>
+                <li>lorem30Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quidem unde ad minima numquam dolore velit laborum quos quod autem!</li>
+                <li>lorem40Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quidem unde ad minima numquam dolore velit laborum quos quod autem!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, soluta? Saepe modi, provident deserunt officia laboriosam sint unde rerum distinctio nihil dolore. Reprehenderit exercitationem, quo asperiores veritatis ducimus praesentium aut eveniet totam modi ipsum impedit cupiditate tempora! Dolores veritatis accusamus quae voluptatibus aspernatur alias delectus culpa eos. Quae, iusto praesentium.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, soluta? Saepe modi, provident deserunt officia laboriosam sint unde rerum distinctio nihil dolore. Reprehenderit exercitationem, quo asperiores veritatis ducimus praesentium aut eveniet totam modi ipsum impedit cupiditate tempora! Dolores veritatis accusamus quae voluptatibus aspernatur alias delectus culpa eos. Quae, iusto praesentium.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, soluta? Saepe modi, provident deserunt officia laboriosam sint unde rerum distinctio nihil dolore. Reprehenderit exercitationem, quo asperiores veritatis ducimus praesentium aut eveniet totam modi ipsum impedit cupiditate tempora! Dolores veritatis accusamus quae voluptatibus aspernatur alias delectus culpa eos. Quae, iusto praesentium.</li>
+            </ul>
+            <a href="#" class="link">Register</a>
+        </div>
+        <div class="evt white" id="stockify" style="margin-top: 0;padding-top: 60px;padding-bottom: 40px;">
+            <h1>Stockify</h1>
+            <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='71px' height='11px'>
+                <path fill-rule='evenodd'
+                    d='M59.669,10.710 L49.164,3.306 L39.428,10.681 L29.714,3.322 L20.006,10.682 L10.295,3.322 L1.185,10.228 L-0.010,8.578 L10.295,0.765 L20.006,8.125 L29.714,0.765 L39.428,8.125 L49.122,0.781 L59.680,8.223 L69.858,1.192 L70.982,2.895 L59.669,10.710 Z' />
+            </svg>
+            <div class="img">
+                <img src="../images/svg/stock.svg" alt="">
+            </div>
+            <h2>Rule</h2>
+            <span></span>
+            <span></span>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quibusdam.</li>
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quidem unde ad minima numquam dolore velit
+                    laborum quos quod autem!</li>
+                <li>lorem30Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quidem unde ad minima numquam
+                    dolore velit laborum quos quod autem!</li>
+                <li>lorem40Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quidem unde ad minima numquam
+                    dolore velit laborum quos quod autem!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, soluta? Saepe modi, provident deserunt
+                    officia laboriosam sint unde rerum distinctio nihil dolore. Reprehenderit exercitationem, quo asperiores
+                    veritatis ducimus praesentium aut eveniet totam modi ipsum impedit cupiditate tempora! Dolores veritatis
+                    accusamus quae voluptatibus aspernatur alias delectus culpa eos. Quae, iusto praesentium.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, soluta? Saepe modi, provident deserunt
+                    officia laboriosam sint unde rerum distinctio nihil dolore. Reprehenderit exercitationem, quo asperiores
+                    veritatis ducimus praesentium aut eveniet totam modi ipsum impedit cupiditate tempora! Dolores veritatis
+                    accusamus quae voluptatibus aspernatur alias delectus culpa eos. Quae, iusto praesentium.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, soluta? Saepe modi, provident deserunt
+                    officia laboriosam sint unde rerum distinctio nihil dolore. Reprehenderit exercitationem, quo asperiores
+                    veritatis ducimus praesentium aut eveniet totam modi ipsum impedit cupiditate tempora! Dolores veritatis
+                    accusamus quae voluptatibus aspernatur alias delectus culpa eos. Quae, iusto praesentium.</li>
+            </ul>
+            <a href="#" class="link">Register</a>
+        </div>
+        <div class="evt case" id="quiz" style="margin-top: 0px;padding-top: 60px;padding-bottom: 40px;">
+            <h1 style="color: #00e7ff;">B-Quiz</h1>
+            <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='71px' height='11px'>
+                <path fill-rule='evenodd'
+                    d='M59.669,10.710 L49.164,3.306 L39.428,10.681 L29.714,3.322 L20.006,10.682 L10.295,3.322 L1.185,10.228 L-0.010,8.578 L10.295,0.765 L20.006,8.125 L29.714,0.765 L39.428,8.125 L49.122,0.781 L59.680,8.223 L69.858,1.192 L70.982,2.895 L59.669,10.710 Z' />
+            </svg>
+            <div class="img">
+                <img src="../images/svg/quiz.svg" alt="">
+            </div>
+            <h2>Rule</h2>
+            <span></span>
+            <span></span>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quibusdam.</li>
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quidem unde ad minima numquam dolore velit
+                    laborum quos quod autem!</li>
+                <li>lorem30Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quidem unde ad minima numquam
+                    dolore velit laborum quos quod autem!</li>
+                <li>lorem40Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quidem unde ad minima numquam
+                    dolore velit laborum quos quod autem!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, soluta? Saepe modi, provident deserunt
+                    officia laboriosam sint unde rerum distinctio nihil dolore. Reprehenderit exercitationem, quo asperiores
+                    veritatis ducimus praesentium aut eveniet totam modi ipsum impedit cupiditate tempora! Dolores veritatis
+                    accusamus quae voluptatibus aspernatur alias delectus culpa eos. Quae, iusto praesentium.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, soluta? Saepe modi, provident deserunt
+                    officia laboriosam sint unde rerum distinctio nihil dolore. Reprehenderit exercitationem, quo asperiores
+                    veritatis ducimus praesentium aut eveniet totam modi ipsum impedit cupiditate tempora! Dolores veritatis
+                    accusamus quae voluptatibus aspernatur alias delectus culpa eos. Quae, iusto praesentium.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, soluta? Saepe modi, provident deserunt
+                    officia laboriosam sint unde rerum distinctio nihil dolore. Reprehenderit exercitationem, quo asperiores
+                    veritatis ducimus praesentium aut eveniet totam modi ipsum impedit cupiditate tempora! Dolores veritatis
+                    accusamus quae voluptatibus aspernatur alias delectus culpa eos. Quae, iusto praesentium.</li>
+            </ul>
+            <a href="#" class="link">Register</a>
+        </div>
+        <footer style="background-color: #fff;z-index: 6;">
+            <div class="about-foot">
+                <h1>About us</h1>
+                <span></span>
+                <span></span>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Libero eveniet debitis
+                    provident repudiandae ipsam incidunt.
+                </p>
+                <div>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-globe-americas"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="links-foot">
+                <h1>Quick Links</h1>
+                <span></span>
+                <span></span>
+                <ul>
+                    <li>
+                        <a href="#analytix">Analytix</a>
+                    </li>
+                    <li>
+                        <a href="#case">Case Study</a>
+                    </li>
+                    <li>
+                        <a href="#stockify">Stockify</a>
+                    </li>
+                    <li>
+                        <a href="#quiz">B-Quiz</a>
+                    </li>
+                    <li>
+                        <a href="#">Pitching</a>
+                    </li>
+                    <li>
+                        <a href="#">Content Writing</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-foot">
+                <h1>Contact</h1>
+                <span></span>
+                <span></span>
+                <div class="address">
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>
+                            TECHNO INDIA : EM-4/1, Sector-V,
+                            Salt Lake, Kolkata-700091,Wst Bengal
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+91 85150 05676</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <p>iic.tmsl@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer> 
+    </div>
+    <!-- Script -->
+    <script src="https://kit.fontawesome.com/d2ca914d90.js" crossorigin="anonymous"></script>
+    <script src="../js/nav.js"></script>
+</body>
+</html>

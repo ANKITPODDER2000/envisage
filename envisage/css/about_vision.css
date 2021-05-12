@@ -1,0 +1,105 @@
+.vision{
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+.vision > .vis-img{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vision > .vis-img > img{
+    position: relative;
+    width: 100%;
+}
+.vision > .doc{
+    position: relative;
+    width: 500px;
+    text-align: left;
+    color: #000;
+}
+.vision > .doc > h2{
+    margin-bottom: 15px;
+}
+.vision > .doc > span{
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #000;
+}
+.vision > .doc > p{
+    display: block;
+    margin-top: 30px;
+}
+@media screen and (max-width : 1140px){
+    .vision{
+        flex-direction: column-reverse;
+        padding: 0 0 50px 0;
+    }
+    .vision > .vis-img{
+        position: relative;
+        width: 60%;
+        height: fit-content;
+        margin-bottom: 60px;
+    }
+    .vision > .doc{
+        width: 60%;
+    }
+}
+@media screen and (max-width : 670px){
+    .vision > .vis-img{
+        width: 80%;
+    }
+    .vision > .doc{
+        width: 80%;
+    }
+}
+img.wave4{
+    width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; /* required */
+    z-index: 1;
+}
+img.wave5{
+    z-index: 2;
+    width: 100%;
+    margin-bottom: -10px;
+}
+#main > div.vision > div.vis-img > span > span > span:nth-child(1) > img,
+#main > div.vision > div.vis-img > span > span > span:nth-child(2) > img,
+#main > div.vision > div.vis-img > span > span > span:nth-child(3) > img,
+#main > div.vision > div.vis-img > span > span > span:nth-child(4) > img,
+#main > div.vision > div.vis-img > span > span > span:nth-child(5) > img,
+#main > div.vision > div.vis-img > span > span > span:nth-child(6) > img,
+#main > div.vision > div.vis-img > span > span > span:nth-child(7) > img,
+#main > div.vision > div.vis-img > span > span > span:nth-child(8) > img,
+#main > div.vision > div.vis-img > span > span > span:nth-child(9) > img,
+#main > div.vision > div.vis-img > span > span > span:nth-child(10) > img
+{
+    width: 100%;
+}
+
+
+#main > header > div > div.img-explore > span > span > span:nth-child(1) > img,
+#main > header > div > div.img-explore > span > span > span:nth-child(2) > img,
+#main > header > div > div.img-explore > span > span > span:nth-child(3) > img,
+#main > header > div > div.img-explore > span > span > span:nth-child(4) > img,
+#main > header > div > div.img-explore > span > span > span:nth-child(5) > img,
+#main > header > div > div.img-explore > span > span > span:nth-child(6) > img,
+#main > header > div > div.img-explore > span > span > span:nth-child(7) > img,
+#main > header > div > div.img-explore > span > span > span:nth-child(8) > img,
+#main > header > div > div.img-explore > span > span > span:nth-child(9) > img,
+#main > header > div > div.img-explore > span > span > span:nth-child(10) > img{
+    width: 100%;
+}

@@ -1,0 +1,190 @@
+.event{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#020D2A , #000);
+    color: #fff;
+}
+.event svg{
+    fill: #fff;
+    display: block;
+    margin: 5px auto 0;
+}
+.event h1.header{
+    text-align: center;
+    transform: translateY(-120px);
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+.event svg{
+    transform: translateY(-120px);
+}
+@media screen and (max-width : 1150px){
+    .event h1.header{
+        transform: translateY(-30px);
+    }
+    .event svg{
+        transform: translateY(-30px);
+    }
+}
+.event .container{
+    position: relative;
+    width: 90%;
+    min-height: 90vh;
+    margin: 0 auto;
+    margin-top: -100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+@media screen and (max-width : 1150px){
+    .event h1.header{
+        transform: translateY(-30px);
+    }
+    .event svg{
+        transform: translateY(-30px);
+    }
+    .event .container{
+        margin-top: 0;
+    }
+}
+.event .container .box{
+    position: relative;
+    width: 450px;
+    min-height: 250px;
+    background: #fff;
+    padding: 30px 30px 30px 80px;
+    color: #000;
+    border-radius: 10px;
+    margin: 20px 50px;
+    cursor: pointer;
+    box-shadow: 0 0 20px #fff5;
+}
+.event .container .box > h1{
+    margin-bottom: 10px;
+    color: rgb(255, 15, 55);
+    letter-spacing: 3px;
+}
+.event .container .box .btn{
+    position: relative;
+    margin-top: 20px;
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 4px solid #020D2A;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.event .container .box .btn a{
+    position: relative;
+    text-decoration: none;
+    color: #020D2A;
+    z-index: 2;
+    transition: 0.5s;
+}
+.event .container .box .btn span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #020D2A;
+    z-index: 0;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: 0.5s;
+}
+.event .container .box .btn:hover a{
+    color: #fff;
+}
+.event .container .box .btn:hover span{
+    transform: scaleY(1);
+}
+.event .container .box .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff9;
+    z-index: 10;
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.event .container .box .overlay > i{
+    font-size: 50px;
+    transition: 0.5s;
+}
+.event .container .box:hover .overlay{
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    top: 75px;
+    box-shadow: 0 0 5px #0006;
+}
+.event .container .box:hover .overlay > i{
+    font-size: 30px;
+}
+
+@media screen and (max-width : 630px){
+    /* .event{
+        padding-bottom: 70px;
+    } */
+    .event h1.header{
+        transform: translateY(0px);
+    }
+    .event svg{
+        transform: translateY(0px);
+    }
+    .event .container{
+        margin-top: 30px;
+    }
+    .event .container .box{
+        width: 90%;
+        margin: 80px 0 30px;
+        min-height: 300px;
+        padding: 30px;
+        padding-top: 80px;
+    }
+    .event .container .box .overlay ,
+    .event .container .box:hover .overlay {
+        left: calc(50% - 50px);
+        top: -50px;
+        width: 100px;
+        height: 100px;
+        box-shadow: 0 0 5px #0006;
+    }
+    .event .container .box:hover .overlay > i{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width : 400px){
+    #main > section.event > h1{
+        padding-top: 30px;
+    }
+    .event .container{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .event .container .box{
+        padding: 20px 20px 30px 20px;
+        padding-top: 70px;
+        text-align: center;
+    }
+    .event .container .box .btn {
+        display: block;
+        margin: 10px auto 0;
+    }
+}
+#main > section.event > img{
+    width: 100%;
+    transform: translateY(10px);
+}

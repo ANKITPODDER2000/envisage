@@ -1,0 +1,127 @@
+.about{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    /* background: linear-gradient(#02000f , #000 70% , #000); */
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about img.wave1{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(98%);
+    width: 100%;
+}
+.about img.wave2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(calc(98% + 10px));
+    width: 100%;
+    opacity: 0.7;
+}
+.about img.wave3{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(calc(98% + 20px));
+    width: 100%;
+    opacity: 0.4;
+}
+.about img.wave4{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(calc(98% + 30px));
+    width: 100%;
+    opacity: 0.2;
+}
+.about h1.header{
+    position: relative;
+    padding-top: 50px;
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+}
+.about svg{
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    fill: #fff;
+}
+.about .container{
+    width: 90%;
+    display: block;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.about .container .img-per{
+    width : 450px;
+}
+.about .container #person{
+    position: relative;
+    width: 450px;
+}
+.about .container p{
+    position: relative;
+    width: 650px;
+    color: #fff7;
+}
+@media screen and (max-width:1160px){
+    .about .container #person{
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+    .about .container p{
+        width: 100%;
+        position: relative;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
+@media screen and (max-width:780px){
+    .about img.wave2{
+        transform: translateY(calc(98% + 5px));
+    }
+    .about img.wave3{
+        transform: translateY(calc(98% + 10px));
+    }
+    .about img.wave4{
+        transform: translateY(calc(98% + 15px));
+    }
+}
+@media screen and (max-width:630px){
+    .about .container{
+        width: 95%;
+    }
+    .about .container .img-per{
+        width: 80%;
+    }
+    .about .container .img-per #person{
+        width: 100%;
+        margin: 60px 0;
+    }
+    .about .container p{
+        width: 90%;
+        font-size: 14px;
+    }
+}
+/* @media screen and (max-width:400px){
+    .about img.wave2{
+        transform: translateY(calc(98% + 3px));
+    }
+    .about img.wave3{
+        transform: translateY(calc(98% + 6px));
+    }
+    .about img.wave4{
+        transform: translateY(calc(98% + 9px));
+    }
+} */
