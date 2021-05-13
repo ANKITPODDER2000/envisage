@@ -41,21 +41,27 @@
     position: relative;
     width: 100%;
 }
-.evt > span{
+.evt  span{
     position: relative;
     display: block;
     width: 20px;
     height: 2px;
     background: #000;
 }
-.evt > span:nth-child(6){
+.evt span.btn-span{
     width: 30px;
     margin: 2px 0;
 }
-.evt > ul{
+.evt p{
+    margin: 20px 0 0 0;
+}
+.evt p.sec-para{
+    margin-bottom: 20px;
+}
+.evt  ul{
     margin-top: 20px;
 }
-.evt > ul > li{
+.evt  ul  li{
     margin-left: 20px;
     margin-bottom: 10px;
 }

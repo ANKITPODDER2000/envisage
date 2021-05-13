@@ -334,7 +334,9 @@ header{
         transform: translateY(20px);
     }
     #main > .content > .container > div{
+        height: fit-content;
         width: 280px;
+        padding-bottom: 30px;
     }
     #main > .content > .container > div > span{
         top: 0;
