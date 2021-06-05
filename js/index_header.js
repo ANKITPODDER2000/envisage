@@ -1,7 +1,6 @@
 const findtimeGap = () => {
-    console.log("HEY");
     let a = new Date();
-    let b = new Date("March 1, 2021 00:00:00");
+    let b = new Date("June 25, 2021 00:00:00");
     let sec = Math.round((b.getTime() - a.getTime()) / 1000)
     let min = Math.floor(sec / 60)
     sec = sec % 60;
@@ -54,126 +53,126 @@ VanillaTilt.init(document.querySelectorAll(".tilt_box"), {
 
 //-----------------------------------
 
-const stage = document.querySelector("#sectionone > div.container");
-const fragment = document.createDocumentFragment();
-const grid = [20 , 20];
-const col  = grid[0];
-const row  = grid[1];
-const field = col * row;
-for(let i = 0 ; i < field ; i++){
-    const div = document.createElement('div');
-    fragment.appendChild(div);
-    div.className = "tail";
-}
-stage.appendChild(fragment);
+// const stage = document.querySelector("#sectionone > div.container");
+// const fragment = document.createDocumentFragment();
+// const grid = [20 , 20];
+// const col  = grid[0];
+// const row  = grid[1];
+// const field = col * row;
+// for(let i = 0 ; i < field ; i++){
+//     const div = document.createElement('div');
+//     fragment.appendChild(div);
+//     div.className = "tail";
+// }
+// stage.appendChild(fragment);
 
-const stageAnimation = anime.timeline({
-    targets : ".tail",
-    easing : "easeInBack",
-    delay : anime.stagger(10 , {from : "last"}),
-    duration : 2000 , 
-    endDelay : 1000,
-    loop : true , 
-    autoplay : false,
-})
-.add({
-    translateX : () => anime.random(-250 , 250),
-    translateY : () => anime.random(-250 , 250),
-    delay : anime.stagger(200 , {grid : grid, from : "last"}),
-    scale : 0.5,
-    backgroundColor : "#2a2e64",
-    borderRadius : "50%",
-})
-.add({
-    targets : stage,
-    rotate : 180 ,
-    duration : 2000,
-    easing : 'easeOutBounce'
-})
-.add({
-    translateX : 0,
-    translateY : 0,
-    delay : anime.stagger(100 , {grid : grid , from : 'center'}),
-    duration : 3000,
-    backgroundColor : '#e01b5c'
-})
-.add({
-    translateX : [
-        {
-            value : anime.stagger('-.1em' , {
-                grid : grid , from : 'first' , axis : 'x'
-            })
-        },
-        {
-            value : anime.stagger('.1em' , {
-                grid : grid , from : 'first' , axis : 'x'
-            })
-        },
-        {
-            value : anime.stagger(0 , {
-                grid : grid , from : 'first' , axis : 'x'
-            })
-        }
-    ],
-    translateY : [
-        {
-            value : anime.stagger('.1em' , {
-                grid : grid , from : 'last' , axis : 'y'
-            })
-        },
-        {
-            value : anime.stagger('-.1em' , {
-                grid : grid , from : 'last' , axis : 'y'
-            })
-        },
-        {
-            value : anime.stagger(0 , {
-                grid : grid , from : 'last' , axis : 'y'
-            })
-        }
-    ],
-    delay : anime.stagger(100 , {grid : grid , from : 'last'}),
-    scale : .7,
-    backgroundColor : '#273849',
-    borderRadius : 0
-})
-.add({
-    translateX : [
-        {
-            value : anime.stagger('-5px' , {
-                grid : grid , from : 'center' , axis : 'x'
-            })
-        },
-        {
-            value : anime.stagger('5px' , {
-                grid : grid , from : 'center' , axis : 'x'
-            })
-        },
-        {
-            value : anime.stagger(0 , {
-                grid : grid , from : 'center' , axis : 'x'
-            })
-        }
-    ],
-    translateY : [
-        {
-            value : anime.stagger('-5px' , {
-                grid : grid , from : 'center' , axis : 'y'
-            })
-        },
-        {
-            value : anime.stagger('5px' , {
-                grid : grid , from : 'center' , axis : 'y'
-            })
-        },
-        {
-            value : anime.stagger(0 , {
-                grid : grid , from : 'center' , axis : 'y'
-            })
-        }
-    ],
-    delay : anime.stagger(100 , {grid : grid , from : 'center'}),
-    scale : 1,
-    backgroundColor : '#14ffeb1a',
-})
-stageAnimation.play();
+// const stageAnimation = anime.timeline({
+//     targets : ".tail",
+//     easing : "easeInBack",
+//     delay : anime.stagger(10 , {from : "last"}),
+//     duration : 2000 , 
+//     endDelay : 1000,
+//     loop : true , 
+//     autoplay : false,
+// })
+// .add({
+//     translateX : () => anime.random(-250 , 250),
+//     translateY : () => anime.random(-250 , 250),
+//     delay : anime.stagger(200 , {grid : grid, from : "last"}),
+//     scale : 0.5,
+//     backgroundColor : "#2a2e64",
+//     borderRadius : "50%",
+// })
+// .add({
+//     targets : stage,
+//     rotate : 180 ,
+//     duration : 2000,
+//     easing : 'easeOutBounce'
+// })
+// .add({
+//     translateX : 0,
+//     translateY : 0,
+//     delay : anime.stagger(100 , {grid : grid , from : 'center'}),
+//     duration : 3000,
+//     backgroundColor : '#e01b5c'
+// })
+// .add({
+//     translateX : [
+//         {
+//             value : anime.stagger('-.1em' , {
+//                 grid : grid , from : 'first' , axis : 'x'
+//             })
+//         },
+//         {
+//             value : anime.stagger('.1em' , {
+//                 grid : grid , from : 'first' , axis : 'x'
+//             })
+//         },
+//         {
+//             value : anime.stagger(0 , {
+//                 grid : grid , from : 'first' , axis : 'x'
+//             })
+//         }
+//     ],
+//     translateY : [
+//         {
+//             value : anime.stagger('.1em' , {
+//                 grid : grid , from : 'last' , axis : 'y'
+//             })
+//         },
+//         {
+//             value : anime.stagger('-.1em' , {
+//                 grid : grid , from : 'last' , axis : 'y'
+//             })
+//         },
+//         {
+//             value : anime.stagger(0 , {
+//                 grid : grid , from : 'last' , axis : 'y'
+//             })
+//         }
+//     ],
+//     delay : anime.stagger(100 , {grid : grid , from : 'last'}),
+//     scale : .7,
+//     backgroundColor : '#273849',
+//     borderRadius : 0
+// })
+// .add({
+//     translateX : [
+//         {
+//             value : anime.stagger('-5px' , {
+//                 grid : grid , from : 'center' , axis : 'x'
+//             })
+//         },
+//         {
+//             value : anime.stagger('5px' , {
+//                 grid : grid , from : 'center' , axis : 'x'
+//             })
+//         },
+//         {
+//             value : anime.stagger(0 , {
+//                 grid : grid , from : 'center' , axis : 'x'
+//             })
+//         }
+//     ],
+//     translateY : [
+//         {
+//             value : anime.stagger('-5px' , {
+//                 grid : grid , from : 'center' , axis : 'y'
+//             })
+//         },
+//         {
+//             value : anime.stagger('5px' , {
+//                 grid : grid , from : 'center' , axis : 'y'
+//             })
+//         },
+//         {
+//             value : anime.stagger(0 , {
+//                 grid : grid , from : 'center' , axis : 'y'
+//             })
+//         }
+//     ],
+//     delay : anime.stagger(100 , {grid : grid , from : 'center'}),
+//     scale : 1,
+//     backgroundColor : '#14ffeb1a',
+// })
+// stageAnimation.play();
