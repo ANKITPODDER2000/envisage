@@ -3,10 +3,10 @@
     width: 100%;
     min-height: 100vh;
     padding-top: 80px;
-    background: #000;
     display: flex;
     align-items: center;
     flex-direction: column;
+    border-bottom: 2px solid #e01b5c;
 }
 #main > header.wrapper > .neon-wrapper{
     display: inline-flex;
@@ -86,7 +86,6 @@
     margin-bottom: 50px;
 }
 .sponsor_container {
-    color: white;
     text-align: center;
     margin:1em 0;
 }
