@@ -1,116 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/default.css">
-    <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/etalk.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <title>E-Talk</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/default.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/etalk.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <title>E-Talk</title>
 </head>
+
 <body>
-    <div class="slidetop">
-        <a href="#main"><i class="fas fa-arrow-up"></i></a>
+  <div class="slidetop">
+    <a href="#main"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <nav>
+    <div class="handburger">
+      <i class="fas fa-bars" onclick="toggleActive()"></i>
+      <i class="far fa-times-circle" onclick="toggleActive()"></i>
     </div>
-    <nav>
-        <div class="handburger">
-            <i class="fas fa-bars" onclick="toggleActive()"></i>
-            <i class="far fa-times-circle" onclick="toggleActive()"></i>
-        </div>
-        <div class="overlay" onmousemove="movemouse(event)">
-            <ul>
-                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="../index.html">Home</a></li>
-                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="./about.html">About Envisage</a>
-                </li>
-                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="./events.html">Events</a></li>
-                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="#">E-Talk</a></li>
-                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="./team.html">Team</a></li>
-                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="./gallery.html">GALLERY</a></li>
-                <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="./sponsors.html">sponsors</a></li>
-            </ul>
-            <div class="cursor"></div>
-        </div>
-    </nav>
+    <div class="overlay" onmousemove="movemouse(event)">
+      <ul>
+        <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="../index.html">Home</a></li>
+        <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="./about.html">About Envisage</a>
+        </li>
+        <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="./events.html">Events</a></li>
+        <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="#">E-Talk</a></li>
+        <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="./team.html">Team</a></li>
+        <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="./gallery.html">GALLERY</a></li>
+        <li><a onmouseover="mousein(this)" onmouseout="mouseout(this)" href="./sponsors.html">sponsors</a></li>
+      </ul>
+      <div class="cursor"></div>
+    </div>
+  </nav>
 
-    <div id="main">
-        <div class="box1">
-            <h1>E-Talk</h1>
-            <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='71px' height='11px'>
-                <path fill-rule='evenodd'
-                    d='M59.669,10.710 L49.164,3.306 L39.428,10.681 L29.714,3.322 L20.006,10.682 L10.295,3.322 L1.185,10.228 L-0.010,8.578 L10.295,0.765 L20.006,8.125 L29.714,0.765 L39.428,8.125 L49.122,0.781 L59.680,8.223 L69.858,1.192 L70.982,2.895 L59.669,10.710 Z' />
-            </svg>
-            <img src="../images/e-talk/svg1.svg" alt="">
+  <div id="main">
+    <div class="box1">
+      <h1>E-Talk</h1>
+      <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='71px' height='11px'>
+        <path fill-rule='evenodd'
+          d='M59.669,10.710 L49.164,3.306 L39.428,10.681 L29.714,3.322 L20.006,10.682 L10.295,3.322 L1.185,10.228 L-0.010,8.578 L10.295,0.765 L20.006,8.125 L29.714,0.765 L39.428,8.125 L49.122,0.781 L59.680,8.223 L69.858,1.192 L70.982,2.895 L59.669,10.710 Z' />
+      </svg>
+      <img src="../images/e-talk/svg1.svg" alt="">
+      <p>
+        Nothing can inspire young minds more than role models and sharing their experience gives them the
+        pursuit of happiness and wish to once be there on stage. With our E-Talks held by eminent personalities
+        who have proved themselves in the field of innovation and entrepreneurship, participants get to know
+        about their thrilling and adventurous journey first hand.
+      </p>
+    </div>
+    <!-- Guest List -->
+    <div class="box2">
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h1>Guest List</h1>
+        <img src="../images/e-talk/underline.svg" alt="underline">
+      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../images/e-talk/Amitabha Singh pic.svg" alt="amitabha singh" />
+            <h2>Amitabha Singh</h2>
+            <p>DIRECTOR AND INDEPENDENT FILMMAKER</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/e-talk/amiya patanaik.svg" alt='amiya patanaik' />
+            <h2>Dr. Amiya Patanaik</h2>
+            <p>NEUROBIT TECHNOLOGIES, CEO AND FOUNDER</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/e-talk/Gautham Pasupuleti.svg" alt='gautham pasupuleti' />
+            <h2>Gautham Pasupuleti</h2>
+            <p>BIODESIGN INNOVATION LABS, FOUNDER AND CEO</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/e-talk/Jack Sim.svg" alt='jack sim' />
+            <h2>Jack Sim</h2>
+            <p>WORLD TOILET ORGANIZATION, FOUNDER</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/e-talk/Rahul Basak.svg" alt='rahul basak' />
+            <h2>Rahul Basak</h2>
+            <p>CEO OF AMAR CANVAS, CHEIF EDITOR- MY CANVAS TALK</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/e-talk/Rostam J.svg" alt='rostam j. Neuwirth' />
+            <h2>Rostam J. Neuwirth</h2>
+            <p>GLOBAL LEGAL STUDIES AT UNIVERSITY OF MACAU, HOD</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/e-talk/Satadru Chowdhury.svg" alt='satadru Chowdhury' />
+            <h2>Satadru Chowdhury</h2>
+            <p>VAANAHAA EDUCATION AND INNOVATION LABS PVT LTD</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/e-talk/Sayan Chakraborty (1).svg" alt="sayan chakraborty" />
+            <h2>Sayan Chakraborty</h2>
+            <p>FOUNDER AT WTF AND HUNGER NUMBER</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/e-talk/sourabh jain.svg" alt="sourabh jain" />
+            <h2>Sourabh Jain</h2>
+            <p>PAYTM, VICE PRESIDENT</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/e-talk/sujaysantra.svg" alt="sujay santra" />
+            <h2>Sujay Santra</h2>
+            <p>FOUNDER AND CEO IKURE TECHSOFT PVT LTD</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/e-talk/unknown.svg" alt="maya vishwakarma" />
+            <h2>Maya Vishwakarma</h2>
+            <p>PADWOMAN OF INDIA/ FOUNDER SUKARMA/ SOCIAL ENTREPRENEUR/ TED-X SPEAKER/ KEYNOTE SPEAKER</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/e-talk/varun javeri.svg" alt="varun jaweri" />
+            <h2>Varun Javeri</h2>
+            <p>LEADING INNOVATION STRATEGIST AT NHA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Starting of footer -->
+    <footer style="box-shadow: 0 0 20px #0005;">
+      <div class="about-foot">
+        <h1>About us</h1>
+        <span></span>
+        <span></span>
+        <p>Envisage is the official E-Summit of Techno Main Salt Lake organized by IIC-TMSL.
+        </p>
+        <div>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="#">
+            <i class="fas fa-globe-americas"></i>
+          </a>
+        </div>
+      </div>
+      <div class="links-foot">
+        <h1>Quick Links</h1>
+        <span></span>
+        <span></span>
+        <ul>
+          <li><a href="#what">Envisage 2021</a></li>
+          <li><a href="#goal">Our Goals</a></li>
+          <li><a href="#timeline">TimeLine</a></li>
+        </ul>
+      </div>
+      <div class="contact-foot">
+        <h1>Contact</h1>
+        <span></span>
+        <span></span>
+        <div class="address">
+          <div>
+            <i class="fas fa-map-marker-alt"></i>
             <p>
-                Nothing can inspire young minds more than role models and sharing their experience gives them the pursuit of happiness and wish to once be there on stage. With our E-Talks held by eminent personalities who have proved themselves in the field of innovation and entrepreneurship, participants get to know about their thrilling and adventurous journey first hand.
+              TECHNO INDIA : EM-4/1, Sector-V,
+              Salt Lake, Kolkata-700091,Wst Bengal
             </p>
+          </div>
+          <div>
+            <i class="fas fa-phone-alt"></i>
+            <p>+91 85150 05676</p>
+          </div>
+          <div>
+            <i class="fas fa-envelope"></i>
+            <p>iic.tmsl@gmail.com</p>
+          </div>
         </div>
-        <div class="box2">
-            <h1>Guest List coming soon !</h1>
-        </div>
-        <!-- Starting of footer -->
-        <footer style="box-shadow: 0 0 20px #0005;">
-            <div class="about-foot">
-                <h1>About us</h1>
-                <span></span>                
-                <span></span>
-                <p>Envisage is the official E-Summit of Techno Main Salt Lake organized by IIC-TMSL.
-                </p>
-                <div>
-                    <a href="#">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fas fa-globe-americas"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="links-foot">
-                <h1>Quick Links</h1>
-                <span></span>                
-                <span></span>
-                <ul>
-                    <li><a href="#what">Envisage 2021</a></li>
-                    <li><a href="#goal">Our Goals</a></li>
-                    <li><a href="#timeline">TimeLine</a></li>
-                </ul>
-            </div>
-            <div class="contact-foot">
-                <h1>Contact</h1>
-                <span></span>                
-                <span></span>
-                <div class="address">
-                    <div>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p>
-                                TECHNO INDIA : EM-4/1, Sector-V,
-                                Salt Lake, Kolkata-700091,Wst Bengal
-                            </p>
-                    </div>
-                    <div>
-                        <i class="fas fa-phone-alt"></i>
-                        <p>+91 85150 05676</p>
-                    </div>
-                    <div>
-                        <i class="fas fa-envelope"></i>
-                        <p>iic.tmsl@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+      </div>
+    </footer>
+  </div>
 
 
-     
 
-    <script src="https://kit.fontawesome.com/d2ca914d90.js" crossorigin="anonymous"></script>
-    <script src="../js/nav.js"></script>
+
+  <script src="https://kit.fontawesome.com/d2ca914d90.js" crossorigin="anonymous"></script>
+  <script src="../js/nav.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/e-talk.js"></script>
 </body>
+
 </html>
