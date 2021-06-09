@@ -85,6 +85,12 @@
     margin-top: 30px;
     margin-bottom: 50px;
 }
+
+#sponsor {
+    color:black;
+    font-size: 3rem;
+}
+
 .sponsor_container {
     text-align: center;
     margin:1em 0;
