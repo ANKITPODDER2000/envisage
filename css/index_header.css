@@ -65,27 +65,8 @@ header{
     color: #fff;
 }
 
-/* .register {
-    width: 10em;
-    height: 5em;
-    background: #e01b5c;
-    color: white;
-    text-align: center;
-    padding:0.5em 1em;
-    border-radius: 30px;
-    text-decoration: none;
-    margin: 1em 0;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.register:hover {
-    background: white;
-    color: #e01b5c;
-} */
-
 .register {
-    margin-top:1em;
+    margin-top:3em;
 }
 
 .register a {

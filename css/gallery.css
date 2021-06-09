@@ -29,7 +29,7 @@
     margin: 0 auto;
     position: relative;
     display: flex;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     padding-bottom: 50px;
 }
 #main > .container > .row{

@@ -66,7 +66,11 @@ footer .about-foot > div > a:nth-child(3){
     color: #f00;
 }
 footer .about-foot > div > a:nth-child(4){
-    color: #5f34af;
+    color: #1da1f2;
+}
+footer .about-foot > div > a:nth-child(5){
+    margin-left: 0;
+    color: #2656bd;
 }
 footer .about-foot > div > a:hover:nth-child(1){
     color: #fff;
@@ -82,7 +86,11 @@ footer .about-foot > div > a:hover:nth-child(3){
 }
 footer .about-foot > div > a:hover:nth-child(4){
     color: #fff;
-    background : #5f34af;
+    background : #1da1f2;
+}
+footer .about-foot > div > a:hover:nth-child(5){
+    color: #fff;
+    background-color: rgb(64,93,230);
 }
 footer .links-foot > ul{
     margin-top: 20px;

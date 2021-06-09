@@ -83,12 +83,22 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 30px;
+    margin-bottom: 50px;
 }
-.wrapper > .container > img{
+.sponsor_container {
+    color: white;
+    text-align: center;
+    margin:1em 0;
+}
+.wrapper > .container > .sponsor_container > img{
     width: 300px;
     height: 300px;
     object-fit: contain;
     margin: 0px 100px;
+    transition: 0.5s;
+}
+.wrapper > .container > .sponsor_container > img:hover {
+    transform: scale(1.1);
 }
 .wrapper > h1{
     color: #fff;
