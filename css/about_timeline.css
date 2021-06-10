@@ -89,24 +89,6 @@ h1.timelineheader{
     margin: 0;
     font-weight: 200;
 }
-.timeline ul li:nth-child(odd) .time {
-    position: absolute;
-    top: 15px;
-    right: -198px;
-    padding: 7px 18px;
-    background-color: rgb(233,33,99);
-    color: #fff;
-    border-radius: 20px;
-}
-.timeline ul li:nth-child(even) .time {
-    position: absolute;
-    top: 15px;
-    left: -198px;
-    padding: 7px 18px;
-    background-color: rgb(233,33,99);
-    color: #fff;
-    border-radius: 20px;
-}
 .timeline ul li:nth-child(5) .time {
     position: absolute;
     top: 15px;
@@ -120,6 +102,24 @@ h1.timelineheader{
     position: absolute;
     top: 15px;
     left: -250px;
+    padding: 7px 18px;
+    background-color: rgb(233,33,99);
+    color: #fff;
+    border-radius: 20px;
+}
+.timeline ul li:nth-child(odd) .time {
+    position: absolute;
+    top: 15px;
+    right: -198px;
+    padding: 7px 18px;
+    background-color: rgb(233,33,99);
+    color: #fff;
+    border-radius: 20px;
+}
+.timeline ul li:nth-child(even) .time {
+    position: absolute;
+    top: 15px;
+    left: -198px;
     padding: 7px 18px;
     background-color: rgb(233,33,99);
     color: #fff;
