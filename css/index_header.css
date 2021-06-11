@@ -72,7 +72,7 @@ header{
 
 #early-registration {
     white-space: nowrap;
-    font-size: 0.9rem;
+    font-size: 0.8em;
     font-weight: bolder;
 }
 
@@ -83,6 +83,10 @@ header{
 
 .register {
     margin-top:3em;
+}
+
+.early-register {
+    margin-bottom: 2em;
 }
 
 .register a {
